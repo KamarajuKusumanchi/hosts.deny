@@ -27,7 +27,8 @@ ALL: 86.136.157.85
 ALL: 87.230.13.226
 ALL: 103.51.18.22
 ALL: 113.116.129.76
-ALL: 113.240.225.230
+# % Abuse contact for '113.240.0.0 - 113.247.255.255' is 'anti-spam@ns.chinanet.cn.net'
+ALL: 113.240.0.0/255.248.0.0
 ALL: 119.192.239.192
 # Abuse contact for '120.192.0.0 - 120.255.255.255' is 'abuse@chinamobile.com'
 ALL: 120.192.0.0/255.192.0.0
