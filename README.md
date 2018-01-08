@@ -16,4 +16,4 @@ The syntax to block a range of hosts is starting_ip/subnet_mask . The subnet mas
 
 So the subnet mask of the IP range 120.192.0.0 - 120.255.255.255 is 255.255.255.255 - (120.255.255.255 - 120.192.0.0) = 255.255.255.255 - (0.(255-192).255.255) = 255.(255-(255-192)).0.0 = 255.192.0.0
 
-So the corresponding entry in the hosts.deny file would be 120.192.0.0/255.192.0.0
+The corresponding entry in the hosts.deny file would be 120.192.0.0/255.192.0.0
