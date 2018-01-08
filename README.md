@@ -14,6 +14,6 @@ $ whois 120.205.199.218 | grep abuse
 
 The syntax to block a range of hosts is starting_ip/subnet_mask . The subnet mask can be obtained by 255.255.255.255 - (ending_ip - starting_ip) with the subtraction done on individual fields.
 
-So the subnet for all hosts in 120.192.0.0 - 120.255.255.255 is 255.255.255.255 - (120.255.255.255 - 120.192.0.0) = 255.255.255.255 - (0.(255-192).255.255) = 255.(255-(255-192)).0.0 = 255.192.0.0
+So the subnet mask for the IP range 120.192.0.0 - 120.255.255.255 is 255.255.255.255 - (120.255.255.255 - 120.192.0.0) = 255.255.255.255 - (0.(255-192).255.255) = 255.(255-(255-192)).0.0 = 255.192.0.0
 
 So the corresponding entry in the hosts.deny file would be 120.192.0.0/255.192.0.0
