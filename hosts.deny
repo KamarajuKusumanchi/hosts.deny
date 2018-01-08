@@ -14,7 +14,8 @@
 # validate looked up hostnames still leave understandable logs. In past
 # versions of Debian this has been the default.
 # ALL: PARANOID
-ALL: 5.101.40.10
+# Abuse contact for '5.101.40.0 - 5.101.40.255' is 'abuse@ups-gb.co.uk'
+ALL: 5.101.40.0/255.255.255.0
 ALL: 14.177.231.203
 ALL: 24.44.254.114
 ALL: 27.255.185.18
@@ -22,7 +23,8 @@ ALL: 27.255.185.18
 ALL: 31.208.32.0/255.255.254.0
 ALL: 40.69.91.236
 ALL: 41.32.18.81
-ALL: 42.7.26.49
+# Abuse contact for '42.4.0.0 - 42.7.255.255' is 'hqs-ipabuse@chinaunicom.cn'
+ALL: 42.4.0.0/255.252.0.0
 ALL: 50.75.209.82
 ALL: 54.37.12.46
 ALL: 60.25.5.93
@@ -38,7 +40,8 @@ ALL: 91.215.239.179
 ALL: 96.9.129.41
 ALL: 103.51.18.22
 ALL: 113.116.129.76
-ALL: 113.195.145.79
+# Abuse contact for '113.194.0.0 - 113.195.255.255' is 'hqs-ipabuse@chinaunicom.cn'
+ALL: 113.194.0.0/255.254.0.0
 # Abuse contact for '113.240.0.0 - 113.247.255.255' is 'anti-spam@ns.chinanet.cn.net'
 ALL: 113.240.0.0/255.248.0.0
 # Abuse contact for '115.239.254.0 - 115.239.254.255' is 'antispam@dcb.hz.zj.cn'
