@@ -14,6 +14,7 @@
 # validate looked up hostnames still leave understandable logs. In past
 # versions of Debian this has been the default.
 # ALL: PARANOID
+ALL: 5.101.40.10
 ALL: 14.177.231.203
 ALL: 24.44.254.114
 ALL: 27.255.185.18
@@ -21,10 +22,13 @@ ALL: 27.255.185.18
 ALL: 31.208.32.0/255.255.254.0
 ALL: 40.69.91.236
 ALL: 41.32.18.81
+ALL: 42.7.26.49
+ALL: 50.75.209.82
 ALL: 54.37.12.46
 ALL: 60.25.5.93
 ALL: 67.205.179.172
 ALL: 67.227.199.47
+ALL: 76.105.91.240
 ALL: 79.134.4.138
 ALL: 80.93.96.26
 ALL: 82.78.180.175
@@ -34,6 +38,7 @@ ALL: 91.215.239.179
 ALL: 96.9.129.41
 ALL: 103.51.18.22
 ALL: 113.116.129.76
+ALL: 113.195.145.79
 # Abuse contact for '113.240.0.0 - 113.247.255.255' is 'anti-spam@ns.chinanet.cn.net'
 ALL: 113.240.0.0/255.248.0.0
 # Abuse contact for '115.239.254.0 - 115.239.254.255' is 'antispam@dcb.hz.zj.cn'
@@ -44,6 +49,8 @@ ALL: 120.192.0.0/255.192.0.0
 ALL: 123.21.166.9
 ALL: 139.162.122.110
 ALL: 139.199.227.71
+ALL: 140.115.71.237
+ALL: 149.202.51.131
 ALL: 164.132.62.241
 ALL: 168.195.4.46
 ALL: 169.54.232.41
@@ -58,6 +65,7 @@ ALL: 194.105.205.32/255.255.255.224
 ALL: 202.112.113.197
 # Abuse contact for '210.73.72.0 - 210.73.75.255' is 'ipas@cnnic.cn'
 ALL: 210.73.72.0/255.255.252.0
+ALL: 210.187.81.233
 ALL: 213.149.105.28
 # Abuse contact for '218.64.0.0 - 218.65.127.255' is 'anti-spam@ns.chinanet.cn.net'
 ALL: 218.64.0.0/255.254.128.0
