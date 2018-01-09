@@ -60,7 +60,8 @@ ALL: 119.192.239.192
 # Abuse contact for '120.192.0.0 - 120.255.255.255' is 'abuse@chinamobile.com'
 ALL: 120.192.0.0/255.192.0.0
 ALL: 123.21.166.9
-ALL: 124.166.123.236
+# Abuse contact for '124.164.0.0 - 124.167.255.255' is 'hqs-ipabuse@chinaunicom.cn'
+ALL: 124.164.0.0/255.252.0.0
 ALL: 138.197.14.202
 ALL: 139.162.122.110
 ALL: 139.199.227.71
