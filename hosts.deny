@@ -71,7 +71,8 @@ ALL: 168.194.81.240
 ALL: 169.54.232.41
 ALL: 171.117.231.136
 ALL: 180.183.198.44
-ALL: 182.100.67.4
+# Abuse contact for '182.96.0.0 - 182.111.255.255' is 'anti-spam@ns.chinanet.cn.net'
+ALL: 182.96.0.0/255.240.0.0
 # Abuse contact for '185.13.118.0 - 185.13.118.255' is 'noc@greentele.com.ru'
 ALL: 185.13.118.0/255.255.255.0
 ALL: 192.129.227.186
