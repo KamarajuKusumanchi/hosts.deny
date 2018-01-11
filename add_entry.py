@@ -13,9 +13,10 @@ def subnet_mask(begin_ip_str, end_ip_str):
     return mask
 
 
-begin_ip_str = sys.argv[1]
-end_ip_str = sys.argv[2]
-# print(begin_ip_str)
-# print(end_ip_str)
-mask = subnet_mask(begin_ip_str, end_ip_str)
-print("ALL: " + begin_ip_str + '/' + mask)
+if __name__ == "__main__":
+    begin_ip_str = sys.argv[1]
+    end_ip_str = sys.argv[2]
+    # print(begin_ip_str)
+    # print(end_ip_str)
+    mask = subnet_mask(begin_ip_str, end_ip_str)
+    print("ALL: " + begin_ip_str + '/' + mask)
