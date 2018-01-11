@@ -25,7 +25,8 @@ ALL: 31.208.14.110
 # Abuse contact for '31.208.32.0 - 31.208.33.255' is 'abuse@bredband2.se'
 ALL: 31.208.32.0/255.255.254.0
 ALL: 36.77.145.56
-ALL: 36.110.114.37
+# Abuse contact for '36.110.0.0 - 36.110.255.255' is 'anti-spam@ns.chinanet.cn.net'
+ALL: 36.110.0.0/255.255.0.0
 ALL: 40.69.91.236
 ALL: 41.32.18.81
 ALL: 41.43.106.251
