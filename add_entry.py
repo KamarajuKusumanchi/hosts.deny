@@ -2,6 +2,9 @@
 
 import sys
 
+import shlex
+import subprocess
+import re
 
 def subnet_mask(begin_ip_str, end_ip_str):
     nf = 4    # number of fields
@@ -11,6 +14,16 @@ def subnet_mask(begin_ip_str, end_ip_str):
     ip_diff = [255 - (end_ip[i] - begin_ip[i]) for i in range(4)]
     mask = '.'.join([str(i) for i in ip_diff])
     return mask
+
+def check_output(command):
+    return subprocess.check_output(shlex.split(command), universal_newlines=True).splitlines()
+
+def grep(pattern, lines):
+    return [line for line in lines if re.search(pattern, line)]
+
+def grepi(pattern, lines):
+    return [line for line in lines if re.search(pattern, line, re.IGNORECASE)]
+
 
 
 if __name__ == "__main__":
