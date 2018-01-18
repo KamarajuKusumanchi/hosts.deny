@@ -48,7 +48,8 @@ ALL: 50.75.209.82
 # Abuse contact for '54.36.0.0 - 54.38.255.255' is 'abuse@ovh.net'
 ALL: 54.36.0.0/255.253.0.0
 ALL: 57.100.3.24
-ALL: 58.242.83.17
+# Abuse contact for '58.242.81.0 - 58.242.86.255' is 'hqs-ipabuse@chinaunicom.cn'
+ALL: 58.242.81.0/255.255.250.0
 ALL: 59.148.141.212
 ALL: 60.25.5.93
 ALL: 60.224.4.33
