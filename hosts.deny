@@ -108,8 +108,10 @@ ALL: 115.159.214.153
 ALL: 115.160.251.50
 # Abuse contact for '115.239.254.0 - 115.239.254.255' is 'antispam@dcb.hz.zj.cn'
 ALL: 115.239.254.0/255.255.255.0
-ALL: 118.89.114.49
-ALL: 118.179.220.203
+# Abuse contact for '118.89.0.0 - 118.89.255.255' is 'ipas@cnnic.cn'
+ALL: 118.89.0.0/255.255.0.0
+# Abuse contact for '118.179.192.0 - 118.179.223.255' is 'abuse@amberit.com.bd'
+ALL: 118.179.192.0/255.255.224.0
 ALL: 119.29.238.202
 ALL: 119.192.239.192
 # Abuse contact for '120.0.0.0 - 120.15.255.255' is 'hqs-ipabuse@chinaunicom.cn'
