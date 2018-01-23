@@ -151,7 +151,8 @@ ALL: 124.26.68.210
 ALL: 124.29.238.198
 # Abuse contact for '124.164.0.0 - 124.167.255.255' is 'hqs-ipabuse@chinaunicom.cn'
 ALL: 124.164.0.0/255.252.0.0
-ALL: 125.83.207.14
+# Abuse contact for '125.80.0.0 - 125.87.255.255' is 'anti-spam@ns.chinanet.cn.net'
+ALL: 125.80.0.0/255.248.0.0
 ALL: 125.209.100.84
 ALL: 125.212.227.56
 ALL: 128.199.253.99
