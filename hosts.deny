@@ -15,8 +15,6 @@
 # versions of Debian this has been the default.
 # ALL: PARANOID
 ALL: 5.88.172.91
-# Abuse contact for '5.101.40.0 - 5.101.40.255' is 'abuse@ups-gb.co.uk'
-ALL: 5.101.40.0/255.255.255.0
 ALL: 5.188.86.36
 ALL: 13.75.105.203
 ALL: 13.94.199.109
