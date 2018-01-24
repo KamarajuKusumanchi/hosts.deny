@@ -35,15 +35,11 @@ ALL: 31.208.32.0/255.255.254.0
 ALL: 36.67.119.155
 ALL: 36.77.145.56
 ALL: 36.88.140.160
-# Abuse contact for '36.110.0.0 - 36.110.255.255' is 'anti-spam@ns.chinanet.cn.net'
-ALL: 36.110.0.0/255.255.0.0
 ALL: 37.79.173.144
 ALL: 40.69.91.236
 ALL: 41.32.18.81
 ALL: 41.42.127.105
 ALL: 41.43.106.251
-# Abuse contact for '42.4.0.0 - 42.7.255.255' is 'hqs-ipabuse@chinaunicom.cn'
-ALL: 42.4.0.0/255.252.0.0
 ALL: 42.115.2.162
 ALL: 45.55.30.164
 ALL: 45.77.132.67
@@ -56,11 +52,7 @@ ALL: 52.166.92.197
 # Abuse contact for '54.36.0.0 - 54.38.255.255' is 'abuse@ovh.net'
 ALL: 54.36.0.0/255.253.0.0
 ALL: 57.100.3.24
-# Abuse contact for '58.242.81.0 - 58.242.86.255' is 'hqs-ipabuse@chinaunicom.cn'
-ALL: 58.242.81.0/255.255.250.0
 ALL: 59.148.141.212
-# Abuse contact for '60.24.0.0 - 60.30.255.255' is 'hqs-ipabuse@chinaunicom.cn'
-ALL: 60.24.0.0/255.249.0.0
 ALL: 60.224.4.33
 ALL: 60.250.168.200
 ALL: 67.180.128.210
@@ -110,8 +102,6 @@ ALL: 103.51.18.22
 ALL: 103.89.88.96
 ALL: 103.216.115.62
 ALL: 103.206.112.232
-# Abuse contact for '106.74.0.0 - 106.74.255.255' is 'ipas@cnnic.cn'
-ALL: 106.74.0.0/255.255.0.0
 ALL: 106.215.9.169
 ALL: 107.180.108.6
 ALL: 109.87.195.251
@@ -119,39 +109,21 @@ ALL: 109.88.48.168
 ALL: 113.30.137.36
 ALL: 113.160.227.93
 ALL: 113.190.192.77
-# Abuse contact for '113.194.0.0 - 113.195.255.255' is 'hqs-ipabuse@chinaunicom.cn'
-ALL: 113.194.0.0/255.254.0.0
-# Abuse contact for '113.240.0.0 - 113.247.255.255' is 'anti-spam@ns.chinanet.cn.net'
-ALL: 113.240.0.0/255.248.0.0
 ALL: 114.143.101.2
 ALL: 115.160.251.50
-# Abuse contact for '115.239.254.0 - 115.239.254.255' is 'antispam@dcb.hz.zj.cn'
-ALL: 115.239.254.0/255.255.255.0
-# Abuse contact for '118.89.0.0 - 118.89.255.255' is 'ipas@cnnic.cn'
-ALL: 118.89.0.0/255.255.0.0
 # Abuse contact for '118.179.192.0 - 118.179.223.255' is 'abuse@amberit.com.bd'
 ALL: 118.179.192.0/255.255.224.0
-# Abuse contact for '120.0.0.0 - 120.15.255.255' is 'hqs-ipabuse@chinaunicom.cn'
-ALL: 120.0.0.0/255.240.0.0
-# Abuse contact for '120.192.0.0 - 120.255.255.255' is 'abuse@chinamobile.com'
-ALL: 120.192.0.0/255.192.0.0
 # Abuse contact for '123.16.0.0 - 123.31.255.255' is 'hm-changed@vnnic.vn'
 ALL: 123.16.0.0/255.240.0.0
 ALL: 123.193.44.15
 ALL: 124.26.68.210
 ALL: 124.29.238.198
-# Abuse contact for '124.164.0.0 - 124.167.255.255' is 'hqs-ipabuse@chinaunicom.cn'
-ALL: 124.164.0.0/255.252.0.0
-# Abuse contact for '125.80.0.0 - 125.87.255.255' is 'anti-spam@ns.chinanet.cn.net'
-ALL: 125.80.0.0/255.248.0.0
 ALL: 125.209.100.84
 ALL: 125.212.227.56
 ALL: 128.199.253.99
 ALL: 138.197.14.202
 # Abuse contact for '139.162.0.0 - 139.162.255.255' is 'abuse@linode.com'
 ALL: 139.162.0.0/255.255.0.0
-# Abuse contact for '139.199.0.0 - 139.199.255.255' is 'ipas@cnnic.cn'
-ALL: 139.199.0.0/255.255.0.0
 ALL: 139.255.104.154
 ALL: 140.115.71.237
 ALL: 144.21.96.83
@@ -184,8 +156,6 @@ ALL: 181.40.120.110
 ALL: 181.229.141.254
 ALL: 181.198.186.157
 ALL: 181.229.114.152
-# Abuse contact for '182.96.0.0 - 182.111.255.255' is 'anti-spam@ns.chinanet.cn.net'
-ALL: 182.96.0.0/255.240.0.0
 ALL: 182.253.197.51
 ALL: 183.88.72.246
 # Abuse contact for '185.13.118.0 - 185.13.118.255' is 'noc@greentele.com.ru'
@@ -226,8 +196,6 @@ ALL: 203.196.142.226
 ALL: 203.213.66.170
 ALL: 205.217.248.67
 ALL: 206.214.3.250
-# Abuse contact for '210.73.72.0 - 210.73.75.255' is 'ipas@cnnic.cn'
-ALL: 210.73.72.0/255.255.252.0
 # Abuse contact for '210.121.128.0 - 210.121.255.255' is 'kornet_ip@kt.com'
 ALL: 210.121.128.0/255.255.128.0
 ALL: 210.187.81.233
@@ -244,10 +212,6 @@ ALL: 217.83.181.235
 ALL: 217.99.106.31
 ALL: 217.99.182.7
 ALL: 217.101.207.114
-# Abuse contact for '218.64.0.0 - 218.65.127.255' is 'anti-spam@ns.chinanet.cn.net'
-ALL: 218.64.0.0/255.254.128.0
-# Abuse contact for '218.75.128.0 - 218.75.159.255' is 'anti-spam@ns.chinanet.cn.net'
-ALL: 218.75.128.0/255.255.224.0
 ALL: 221.125.150.89
 ALL: 223.206.125.118
 
