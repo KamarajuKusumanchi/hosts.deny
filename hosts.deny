@@ -308,3 +308,5 @@ ALL: 221.132.71.222
 ALL: 221.149.84.82
 ALL: 223.72.33.178
 ALL: 223.206.125.118
+
+sshd: ALL: aclexec /usr/local/bin/sshfilter/sshfilter.py deny %a

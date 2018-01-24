@@ -9,3 +9,4 @@
 #
 ALL: 10.0.8.129
 ALL: 10.0.8.130
+sshd: ALL: aclexec /usr/local/bin/sshfilter/sshfilter.py allow %a
