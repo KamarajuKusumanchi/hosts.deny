@@ -1,15 +1,21 @@
-==== Overview ====
+=== Overview ===
 The idea here is to block ssh connections from unauthorized machines by using multiple layers of defense mechanisms
 * Explicit blocking or allowing an IP addresses or a range of IP addresses
 * Country based blocking or whitelisting
 * Black list based blocking
 
-==== Explicit listing ====
-The first layer of defense is to explicitly list the IP addresses in hosts.allow and hosts.deny files. An IP address in hosts.allow is always allowed to connect and an IP address in hosts.deny is always blocked. Sample entries in either file will be:
+=== Explicit listing ===
+The first layer of defense is to explicitly list the IP addresses or a range of IP addresses in hosts.allow and hosts.deny files. An IP address in hosts.allow can always connect and an IP address in hosts.deny is always blocked. 
+
+==== Blocking/allowing a single IP ====
+Add a line something like below to either hosts.deny or hosts.allow depending on whether the IP needs to be blocked or whitelisted.
 
 <pre>
 ALL: <ip address 1>
-ALL: <ip address 2>
+</pre>
+or
+<pre>
+ALL: starting_ip/subnet_mask
 </pre>
 
 For example
@@ -17,20 +23,22 @@ For example
 <pre>
 ALL: 34.195.172.30
 </pre>
+or
+<pre>
+ALL: 120.192.0.0/255.192.0.0
+</pre>
 
-We can also allow/block an IP address range instead of a single IP address. This range can be obtained from the abuse contact information listed in the whois record.
+==== Blocking a range of IPs ====
 
-For example, I noticed that there were many brute-force ssh login attempts from 120.205.199.218 into one of my machines on 2018-01-06. This IP address is owned by China Mobile. However, I do not expect anyone from China Mobile to connect to any of my machines. So I decided to block the entire IP range  120.192.0.0 - 120.255.255.255. This range was obtained from
-
+For a given IP address, the relevant range can be obtained from the abuse contact information listed in the whois record. For example, 
 <pre>
 $ whois 120.205.199.218 | grep abuse
 % Abuse contact for '120.192.0.0 - 120.255.255.255' is 'abuse@chinamobile.com'
 ...
 </pre>
+shows that the starting_ip is 120.192.0.0 and the ending_ip is 120.255.255.255.
 
-The syntax to block a range of hosts is starting_ip/subnet_mask . The subnet mask can be obtained by 255.255.255.255 - (ending_ip - starting_ip) with the subtraction done on individual fields.
-
-So the subnet mask of the IP range 120.192.0.0 - 120.255.255.255 is 255.255.255.255 - (120.255.255.255 - 120.192.0.0) = 255.255.255.255 - (0.(255-192).255.255) = 255.(255-(255-192)).0.0 = 255.192.0.0
+The subnet_mask is obtained by 255.255.255.255 - (ending_ip - starting_ip) with the subtraction done on individual fields. So the subnet mask of the IP range 120.192.0.0 - 120.255.255.255 is 255.255.255.255 - (120.255.255.255 - 120.192.0.0) = 255.255.255.255 - (0.(255-192).255.255) = 255.(255-(255-192)).0.0 = 255.192.0.0
 
 The corresponding entry in the hosts.deny file would be 
 
