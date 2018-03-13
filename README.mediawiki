@@ -46,7 +46,7 @@ ALL: 120.192.0.0/255.192.0.0
 </pre>
 
 === Country based access control ===
-The second layer of defense is based on the country of the IP address. To allow or deny ssh connections based on it change the ALLOW/DENY variables in the COUNTRIES section of the config.ini file and then call sshfilter.py in hosts.allow/hosts.deny files. For example
+The second layer of defense is based on the country of the IP address. To allow or deny ssh connections based on it, change the ALLOW/DENY variables in the COUNTRIES section of the config.ini file and then call sshfilter.py in hosts.allow/hosts.deny files. For example
 
 <pre>
 $ cat config.ini
