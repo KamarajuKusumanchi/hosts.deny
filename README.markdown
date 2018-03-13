@@ -1,5 +1,10 @@
-The idea here is to block ssh connections from unauthorized machines by using multiple layers of defense mechanisms.
+==== Overview ====
+The idea here is to block ssh connections from unauthorized machines by using multiple layers of defense mechanisms
+* Explicit blocking or allowing an IP addresses or a range of IP addresses
+* Country based blocking or whitelisting
+* Black list based blocking
 
+==== Explicit listing ====
 The first layer of defense is to explicitly list the IP addresses in hosts.allow and hosts.deny files. An IP address in hosts.allow is always allowed to connect and an IP address in hosts.deny is always blocked. Sample entries in either file will be:
 
 <pre>
