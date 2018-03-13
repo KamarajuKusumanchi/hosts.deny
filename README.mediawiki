@@ -86,7 +86,4 @@ black_list_file = ${GITHUB_ROOT}/ipsum/levels/2.txt
 will read the blacklisted IPs from /home/raju/work/github/ipsum/levels/2.txt .
 
 ==== My blacklist file ====
-I am using the blacklist file https://github.com/stamparm/ipsum/blob/master/levels/2.txt . I have a cron job that updates this file on a regular basis.
-This ensures that I am always comparing against the latest set of bad boys.
-
-
+I have a cron job that regularly downloads blacklisted IPs data from https://github.com/stamparm/ipsum/blob/master/levels/2.txt . This ensures that we are always comparing against the latest set of bad boys.
