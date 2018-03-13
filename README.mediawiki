@@ -83,9 +83,9 @@ GITHUB_ROOT = ${HOME}/work/github
 black_list_file = ${GITHUB_ROOT}/ipsum/levels/2.txt
 </pre>
 
-will read the blacklisted IPs from the file /home/raju/work/github/ipsum/levels/2.txt .
+will read the blacklisted IPs from /home/raju/work/github/ipsum/levels/2.txt .
 
-==== my blacklist file ====
+==== My blacklist file ====
 I am using the blacklist file https://github.com/stamparm/ipsum/blob/master/levels/2.txt . I have a cron job that updates this file on a regular basis.
 This ensures that I am always comparing against the latest set of bad boys.
 
