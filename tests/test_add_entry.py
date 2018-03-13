@@ -1,4 +1,4 @@
-import add_entry
+from supplementary import add_entry
 
 # To run the tests
 # cd into the project directory
