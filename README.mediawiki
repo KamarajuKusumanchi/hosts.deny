@@ -70,7 +70,9 @@ sshd: ALL: aclexec /usr/local/bin/sshfilter/sshfilter.py deny %a
 will allow connections from IP addresses in India and USA but block connections from Russia and China.
 
 === Blacklist based blocking ===
-The third and final layer of defense is to check if the IP address is blacklisted. This requires access to a recent list of bad IPs stored in a file. sshfilter.py gets this list by reading the file pointed to by "black_list_file" variable in the DEFAULT section of config.ini . For example
+The third and final layer of defense is to check if the IP address is blacklisted. This requires access to a recent list of bad IPs stored in a file.
+
+sshfilter.py gets this list by reading the file pointed to by the "black_list_file" variable in the DEFAULT section of config.ini . For example
 
 <pre>
 $ cat config.ini
