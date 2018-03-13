@@ -9,7 +9,7 @@ The first layer of defense is to explicitly list the IP address or a range of IP
 
 To block/allow a single IP
 <pre>
-ALL: <ip address 1>
+ALL: <ip address>
 </pre>
 
 To block/allow a range of IPs
