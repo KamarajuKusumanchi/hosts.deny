@@ -5,7 +5,7 @@ The idea here is to block /allow ssh connections from unauthorized / authorized 
 * Blacklist based blocking
 
 === Explicit listing ===
-The first layer of defense is to explicitly list the IP address or a range of IP addresses in hosts.allow and hosts.deny files. An IP address in hosts.allow can always connect and an IP address in hosts.deny is always blocked. 
+The first layer of defense is to explicitly list the IP address or a range of IP addresses in hosts.allow and hosts.deny files. An IP address in hosts.allow will always connect and an IP address in hosts.deny is always blocked. 
 
 To block/allow a single IP
 <pre>
