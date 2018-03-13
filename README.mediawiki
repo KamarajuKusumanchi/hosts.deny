@@ -1,19 +1,18 @@
 === Overview ===
-The idea here is to block ssh connections from unauthorized machines by using multiple layers of defense mechanisms
+The idea here is to block ssh connections from unauthorized machines by using multiple layers of defense mechanisms.
 * Explicit blocking or allowing an IP addresses or a range of IP addresses
 * Country based blocking or whitelisting
 * Black list based blocking
 
 === Explicit listing ===
-The first layer of defense is to explicitly list the IP addresses or a range of IP addresses in hosts.allow and hosts.deny files. An IP address in hosts.allow can always connect and an IP address in hosts.deny is always blocked. 
+The first layer of defense is to explicitly list the IP address or a range of IP addresses in hosts.allow and hosts.deny files. An IP address in hosts.allow can always connect and an IP address in hosts.deny is always blocked. 
 
-==== Blocking/allowing a single IP ====
-Add a line something like below to either hosts.deny or hosts.allow depending on whether the IP needs to be blocked or whitelisted.
-
+To block/allow a single IP
 <pre>
 ALL: <ip address 1>
 </pre>
-or
+
+To block/allow a range of IPs
 <pre>
 ALL: starting_ip/subnet_mask
 </pre>
@@ -28,7 +27,7 @@ or
 ALL: 120.192.0.0/255.192.0.0
 </pre>
 
-==== Blocking a range of IPs ====
+==== IP range and subnet mask ====
 
 For a given IP address, the relevant range can be obtained from the abuse contact information listed in the whois record. For example, 
 <pre>
@@ -38,7 +37,7 @@ $ whois 120.205.199.218 | grep abuse
 </pre>
 shows that the starting_ip is 120.192.0.0 and the ending_ip is 120.255.255.255.
 
-The subnet_mask is obtained by 255.255.255.255 - (ending_ip - starting_ip) with the subtraction done on individual fields. So the subnet mask of the IP range 120.192.0.0 - 120.255.255.255 is 255.255.255.255 - (120.255.255.255 - 120.192.0.0) = 255.255.255.255 - (0.(255-192).255.255) = 255.(255-(255-192)).0.0 = 255.192.0.0
+The subnet_mask is obtained by 255.255.255.255 - (ending_ip - starting_ip) with the subtraction done on individual fields. So the subnet mask for the above IP range is 255.255.255.255 - (120.255.255.255 - 120.192.0.0) = 255.255.255.255 - (0.(255-192).255.255) = 255.(255-(255-192)).0.0 = 255.192.0.0
 
 The corresponding entry in the hosts.deny file would be 
 
@@ -46,6 +45,7 @@ The corresponding entry in the hosts.deny file would be
 ALL: 120.192.0.0/255.192.0.0
 </pre>
 
+=== Country wide filtering ===
 The second layer of defense is based on the country of the IP address. We can either allow or deny ssh connections from IP address belonging to a prespecified set of countries.
 
 To allow/block certain countries add them to the ALLOW/DENY variables in the COUNTRIES section of the config.ini file. Then call sshfilter.py in hosts.allow/hosts.deny files. For example
@@ -71,7 +71,7 @@ sshd: ALL: aclexec /usr/local/bin/sshfilter/sshfilter.py deny %a
 
 will allow connections from IP addresses in India and USA, block connections from Russia and China.
 
-
+=== Blacklist based blocking ===
 The third and final layer of defense is to check if the IP address is blacklisted. The list of bad IPs are read from the black_list_file variable in the DEFAULT section of config.ini . The default is set to a local copy of the level 2 file provided by the ipsum project <fill the exact location later>. I have a cron job that updates this file on a regular basis. This ensures that I am always comparing against the latest set of bad boys.
 
 
