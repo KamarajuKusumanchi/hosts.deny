@@ -29,13 +29,13 @@ ALL: 120.192.0.0/255.192.0.0
 
 ==== IP range and subnet mask ====
 
-For a given IP address, the relevant range can be obtained from the abuse contact information listed in the whois record. For example, 
+For a given IP address, the relevant range can be obtained from the abuse contact information listed in the whois record. For example 
 <pre>
 $ whois 120.205.199.218 | grep abuse
 % Abuse contact for '120.192.0.0 - 120.255.255.255' is 'abuse@chinamobile.com'
 ...
 </pre>
-shows that the starting_ip is 120.192.0.0 and the ending_ip is 120.255.255.255.
+shows that the starting_ip is 120.192.0.0 and ending_ip is 120.255.255.255.
 
 The subnet_mask is obtained by 255.255.255.255 - (ending_ip - starting_ip) with the subtraction done on individual fields. So the subnet mask for the above IP range is 255.255.255.255 - (120.255.255.255 - 120.192.0.0) = 255.255.255.255 - (0.(255-192).255.255) = 255.(255-(255-192)).0.0 = 255.192.0.0
 
