@@ -1,7 +1,7 @@
 === Overview ===
-The idea here is to block ssh connections from unauthorized machines by using multiple layers of defense mechanisms.
-* Explicit blocking or allowing an IP addresses or a range of IP addresses
-* Country based blocking or whitelisting
+The idea here is to block /allow ssh connections from unauthorized / authorized machines by using multiple layers of defense mechanisms such as
+* Explicitly listing an IP address or a range of addresses
+* Country based access control
 * Black list based blocking
 
 === Explicit listing ===
