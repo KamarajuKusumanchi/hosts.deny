@@ -2,7 +2,7 @@
 The idea here is to block /allow ssh connections from unauthorized / authorized machines by using multiple layers of defense mechanisms such as
 * Explicitly listing an IP address or a range of IP addresses
 * Country based access control
-* Black list based blocking
+* Blacklist based blocking
 
 === Explicit listing ===
 The first layer of defense is to explicitly list the IP address or a range of IP addresses in hosts.allow and hosts.deny files. An IP address in hosts.allow can always connect and an IP address in hosts.deny is always blocked. 
@@ -45,7 +45,7 @@ The corresponding entry in the hosts.deny file would be
 ALL: 120.192.0.0/255.192.0.0
 </pre>
 
-=== Country wide filtering ===
+=== Country based access control ===
 The second layer of defense is based on the country of the IP address. We can either allow or deny ssh connections from IP address belonging to a prespecified set of countries.
 
 To allow/block certain countries add them to the ALLOW/DENY variables in the COUNTRIES section of the config.ini file. Then call sshfilter.py in hosts.allow/hosts.deny files. For example
