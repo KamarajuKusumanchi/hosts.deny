@@ -37,9 +37,9 @@ $ whois 120.205.199.218 | grep abuse
 </pre>
 shows that the starting_ip is 120.192.0.0 and ending_ip is 120.255.255.255.
 
-The subnet_mask is obtained by 255.255.255.255 - (ending_ip - starting_ip) with the subtraction done on individual fields. So the subnet mask for the above IP range is 255.255.255.255 - (120.255.255.255 - 120.192.0.0) = 255.255.255.255 - (0.(255-192).255.255) = 255.(255-(255-192)).0.0 = 255.192.0.0
+The subnet_mask can be obtained by 255.255.255.255 - (ending_ip - starting_ip) with the subtraction done on individual fields. So for the above IP range, the subnet mask is 255.255.255.255 - (120.255.255.255 - 120.192.0.0) = 255.255.255.255 - (0.(255-192).255.255) = 255.(255-(255-192)).0.0 = 255.192.0.0
 
-The corresponding entry in the hosts.deny file would be 
+The corresponding entry in hosts.deny / hosts.allow files would be 
 
 <pre>
 ALL: 120.192.0.0/255.192.0.0
