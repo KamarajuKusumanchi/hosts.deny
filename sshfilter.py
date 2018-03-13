@@ -7,6 +7,8 @@ import shlex
 import subprocess
 import re
 
+import pandas as pd
+
 from config import Config
 
 
@@ -24,7 +26,17 @@ def get_country(ip):
 
 def deny(ip):
     country = get_country(ip)
-    return country in Config['COUNTRIES']['DENY']
+    is_bad_country = country in Config['COUNTRIES']['DENY']
+
+    if is_bad_country:
+        return is_bad_country
+    else:
+        black_list_file = Config['DEFAULT']['black_list_file']
+        black_list = pd.read_csv(black_list_file,
+                                 header=None,
+                                 names=['ip'])
+        is_bad_ip = ip in black_list['ip'].values
+        return is_bad_ip
 
 
 def allow(ip):
