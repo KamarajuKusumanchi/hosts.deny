@@ -15,6 +15,7 @@
 # versions of Debian this has been the default.
 # ALL: PARANOID
 ALL: 45.225.248.236
+ALL: 185.214.47.128
 ALL: 185.222.209.106
 
 sshd: ALL: aclexec /usr/local/bin/sshfilter/sshfilter.py deny %a
