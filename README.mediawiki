@@ -5,7 +5,7 @@ The goal here is to block ssh connections from unauthorized machines. This is ac
 * Country based blocking
 * Blacklist based blocking
 
-The approach is flexible enough to allow connections from authorized machines (also known as white listing).
+The current approach is also flexible to allow connections from authorized machines (also known as white listing).
 
 === Explicit listing ===
 The first layer of defense is to explicitly list the IP address or a range of IP addresses in hosts.allow and hosts.deny files. An IP address in hosts.allow will always connect and an IP address in hosts.deny is always blocked. 
