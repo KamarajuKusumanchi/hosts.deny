@@ -14,14 +14,21 @@
 # validate looked up hostnames still leave understandable logs. In past
 # versions of Debian this has been the default.
 # ALL: PARANOID
+ALL: 18.216.131.149
+ALL: 45.79.94.244
 ALL: 45.115.94.137
 ALL: 45.225.248.236
 ALL: 50.78.124.132
 ALL: 70.178.76.84
+ALL: 103.110.88.112
 ALL: 107.128.116.171
+ALL: 112.196.37.58
 ALL: 123.255.250.59
 ALL: 129.191.21.213
+ALL: 131.196.15.66
+ALL: 173.19.25.5
 # % Abuse contact for '185.214.44.0 - 185.214.47.255' is 'abuse@yottanet.it'
+ALL: 182.18.170.237
 ALL: 185.214.44.0/255.255.252.0
 ALL: 185.222.209.106
 
