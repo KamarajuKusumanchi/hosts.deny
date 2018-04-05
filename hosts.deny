@@ -15,6 +15,7 @@
 # versions of Debian this has been the default.
 # ALL: PARANOID
 ALL: 18.216.131.149
+ALL: 35.200.82.101
 ALL: 45.79.94.244
 ALL: 45.115.94.137
 ALL: 45.225.248.236
@@ -26,6 +27,7 @@ ALL: 112.196.37.58
 ALL: 123.255.250.59
 ALL: 129.191.21.213
 ALL: 131.196.15.66
+ALL: 132.148.85.115
 ALL: 173.19.25.5
 # % Abuse contact for '185.214.44.0 - 185.214.47.255' is 'abuse@yottanet.it'
 ALL: 182.18.170.237
