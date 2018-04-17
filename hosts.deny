@@ -40,5 +40,6 @@ ALL: 183.87.99.61
 ALL: 185.214.44.0/255.255.252.0
 ALL: 185.222.209.106
 ALL: 198.199.86.204
+ALL: 202.88.244.70
 
 sshd: ALL: aclexec /usr/local/bin/sshfilter/sshfilter.py deny %a
