@@ -16,8 +16,8 @@
 # ALL: PARANOID
 ALL: 18.216.131.149
 ALL: 23.92.27.190
-ALL: 35.184.255.206
-ALL: 35.185.176.171
+# % Abuse contact for '35.184.0.0 - 35.191.255.255' is google-cloud-compliance@google.com
+ALL: 35.184.0.0/255.248.0.0
 ALL: 35.200.82.101
 ALL: 35.225.95.47
 ALL: 38.87.235.82
