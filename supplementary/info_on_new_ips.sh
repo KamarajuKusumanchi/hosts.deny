@@ -1,5 +1,11 @@
 #! /usr/bin/env bash
-cd ~/work/github/hosts.deny
+
+# set -x
+
+src_dir=${1:-~/work/github/hosts.deny}
+
+echo checking in $src_dir
+cd $src_dir
 git diff hosts.deny | grep "^+" | grep -v '^++' | cut -f 2 -d ' ' | while read r
 do
   echo $r
