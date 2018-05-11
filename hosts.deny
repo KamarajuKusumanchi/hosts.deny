@@ -35,8 +35,9 @@ ALL: 50.56.220.246
 # % Abuse contact for '50.62.0.0 - 50.63.255.255' is abuse@godaddy.com
 ALL: 50.62.0.0/255.254.0.0
 ALL: 50.78.124.132
-ALL: 50.204.74.42
-ALL: 50.251.161.125
+# NetRange:       50.128.0.0 - 50.255.255.255
+# OrgAbuseEmail:  abuse@comcast.net
+ALL: 50.128.0.0/255.128.0.0
 ALL: 52.91.65.7
 ALL: 52.172.40.156
 ALL: 54.187.190.115
