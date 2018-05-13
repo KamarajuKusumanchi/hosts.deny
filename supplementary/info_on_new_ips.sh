@@ -9,7 +9,7 @@ cd $src_dir
 git diff hosts.deny | grep "^+" | grep -v '^++' | cut -f 2 -d ' ' | while read r
 do
   echo $r
-  geoiplookup $r
+  geoiplookup -f ~/data/geoiplookup/GeoIP.dat $r
   whois $r | grep -Ei "abuse|range"
   echo
 done
