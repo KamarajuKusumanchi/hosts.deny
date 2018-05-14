@@ -40,8 +40,9 @@ ALL: 50.78.124.132
 # OrgAbuseEmail:  abuse@comcast.net
 ALL: 50.128.0.0/255.128.0.0
 ALL: 52.91.65.7
-ALL: 52.172.40.156
-ALL: 52.191.169.145
+# NetRange:       52.145.0.0 - 52.191.255.255
+# OrgAbuseEmail:  abuse@microsoft.com
+ALL: 52.145.0.0/255.209.0.0
 ALL: 54.187.190.115
 ALL: 54.187.214.121
 ALL: 54.221.242.65
