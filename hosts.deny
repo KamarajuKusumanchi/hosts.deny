@@ -131,8 +131,9 @@ ALL: 203.122.45.27
 ALL: 206.189.165.222
 ALL: 207.224.25.115
 ALL: 208.67.16.157
-ALL: 209.126.108.87
-ALL: 209.126.116.135
+# NetRange:       209.126.96.0 - 209.126.127.255
+# OrgAbuseEmail:  abuse@heg-us.com
+ALL: 209.126.96.0/255.255.224.0
 ALL: 210.212.91.99
 
 sshd: ALL: aclexec /usr/local/bin/sshfilter/sshfilter.py deny %a
