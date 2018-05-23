@@ -14,6 +14,7 @@
 # validate looked up hostnames still leave understandable logs. In past
 # versions of Debian this has been the default.
 # ALL: PARANOID
+ALL: 13.71.27.74
 ALL: 18.216.131.149
 ALL: 23.92.27.190
 # % Abuse contact for '35.184.0.0 - 35.191.255.255' is google-cloud-compliance@google.com
@@ -43,31 +44,37 @@ ALL: 52.91.65.7
 # NetRange:       52.145.0.0 - 52.191.255.255
 # OrgAbuseEmail:  abuse@microsoft.com
 ALL: 52.145.0.0/255.209.0.0
+ALL: 54.36.90.126
 ALL: 54.160.87.244
 ALL: 54.187.190.115
 ALL: 54.187.214.121
 ALL: 54.221.242.65
 ALL: 54.235.240.178
+ALL: 66.155.27.37
 ALL: 66.155.106.116
 ALL: 66.155.106.108
 ALL: 66.205.198.170
 ALL: 68.56.14.129
 ALL: 69.162.73.83
 ALL: 70.178.76.84
+ALL: 71.56.218.201
 ALL: 72.49.239.100
 ALL: 72.167.13.44
 # NetRange:       74.121.192.0 - 74.121.199.255
 # RAbuseEmail:  abuse@blackmesh.com
 ALL: 74.121.192.0/255.255.248.0
+ALL: 75.22.173.174
 ALL: 76.74.170.155
 ALL: 76.119.11.144
 ALL: 96.126.126.110
 ALL: 96.234.157.43
+ALL: 97.64.239.118
 ALL: 97.74.238.145
 ALL: 97.107.138.245
 ALL: 98.164.34.90
-ALL: 103.110.88.112
+ALL: 103.59.196.162
 ALL: 103.99.1.64
+ALL: 103.110.88.112
 ALL: 104.130.119.162
 ALL: 104.131.29.60
 ALL: 104.183.73.83
@@ -85,7 +92,9 @@ ALL: 129.191.21.213
 ALL: 131.196.15.66
 # % Abuse contact for '132.148.0.0 - 132.148.255.255' is abuse@godaddy.com
 ALL: 132.148.0.0/255.255.0.0
+ALL: 139.59.29.252
 ALL: 149.107.8.64
+ALL: 158.85.128.9
 ALL: 162.17.49.3
 ALL: 162.242.243.82
 ALL: 162.243.162.99
@@ -122,5 +131,8 @@ ALL: 203.122.45.27
 ALL: 206.189.165.222
 ALL: 207.224.25.115
 ALL: 208.67.16.157
+ALL: 209.126.108.87
+ALL: 209.126.116.135
+ALL: 210.212.91.99
 
 sshd: ALL: aclexec /usr/local/bin/sshfilter/sshfilter.py deny %a
