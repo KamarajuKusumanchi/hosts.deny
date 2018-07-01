@@ -6,6 +6,7 @@ src_dir=${1:-~/work/github/hosts.deny}
 
 echo checking in $src_dir
 cd $src_dir
+git diff hosts.deny
 git diff hosts.deny | grep "^+" | grep -v '^++' | cut -f 2 -d ' ' | while read r
 do
   echo $r
