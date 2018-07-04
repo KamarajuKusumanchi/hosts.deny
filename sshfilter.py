@@ -18,9 +18,16 @@ def check_output(command):
 
 
 def get_country(ip):
-    output = check_output('geoiplookup ' + ip)[0]
+    cmd = 'geoiplookup'
+    if Config.has_option('DEFAULT', 'GeoIP_datafile'):
+        datafile = Config.get('DEFAULT', 'GeoIP_datafile')
+        cmd += ' -f ' + datafile
+    cmd += ' ' + ip
+    # print('cmd = ', cmd)
+    output = check_output(cmd)[0]
     regex = re.compile("GeoIP Country Edition: (\w+), ")
     country = regex.findall(output)[0]
+    # print('country of ', ip, ' = ', country)
     return country
 
 
