@@ -21,6 +21,8 @@ ALL: 18.206.70.74
 ALL: 18.216.131.149
 ALL: 23.91.96.221
 ALL: 23.92.27.190
+ALL: 23.227.188.254
+ALL: 27.54.162.250
 # % Abuse contact for '35.184.0.0 - 35.191.255.255' is google-cloud-compliance@google.com
 ALL: 35.184.0.0/255.248.0.0
 ALL: 35.200.82.101
@@ -209,6 +211,7 @@ ALL: 209.133.101.3
 ALL: 209.141.60.247
 ALL: 210.212.91.99
 ALL: 216.55.141.66
+ALL: 216.74.207.193
 ALL: 216.104.198.50
 
 sshd: ALL: aclexec /usr/local/bin/sshfilter/sshfilter.py deny %a
