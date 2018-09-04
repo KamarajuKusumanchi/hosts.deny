@@ -69,8 +69,9 @@ ALL: 64.50.164.38
 ALL: 65.23.47.242
 ALL: 65.52.12.132
 ALL: 66.102.54.144
-ALL: 66.154.116.178
-ALL: 66.154.125.38
+# NetRange:       66.154.96.0 - 66.154.127.255
+# OrgAbuseEmail:  abuse@assertivenetworks.ca
+ALL: 66.154.96.0/255.255.224.0
 # NetRange:       66.155.0.0 - 66.155.127.255
 # OrgAbuseEmail:  abuse@cogecopeer1.com
 ALL: 66.155.0.0/255.255.128.0
