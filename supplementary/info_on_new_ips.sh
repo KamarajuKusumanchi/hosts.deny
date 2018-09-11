@@ -11,7 +11,7 @@ git diff hosts.deny | grep "^+" | grep -v '^++' | cut -f 2 -d ' ' | while read r
 do
   echo $r
   geoiplookup -f ~/.local/share/GeoIP/GeoIP.dat $r
-  grep $r ~/x/ipsum.txt_asof_*
+  grep $r ~/data/ipsum/ipsum.txt_asof_*
   echo
   whois $r | grep -Ei "abuse|range"
   echo
