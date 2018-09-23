@@ -26,6 +26,7 @@ ALL: 23.227.188.254
 ALL: 27.54.162.250
 # % Abuse contact for '35.184.0.0 - 35.191.255.255' is google-cloud-compliance@google.com
 ALL: 35.184.0.0/255.248.0.0
+ALL: 35.199.1.47
 ALL: 35.200.82.101
 ALL: 35.225.95.47
 ALL: 36.255.134.195
