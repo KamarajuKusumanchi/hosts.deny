@@ -136,6 +136,7 @@ ALL: 107.128.116.171
 # OrgAbuseEmail:  abuse-mail@verizonbusiness.com
 ALL: 108.0.0.0/255.198.0.0
 ALL: 108.58.41.139
+ALL: 108.174.49.215
 ALL: 112.196.37.58
 ALL: 115.249.139.206
 # % Abuse contact for '117.192.0.0 - 117.255.255.255' is 'abuse@bsnl.in'
