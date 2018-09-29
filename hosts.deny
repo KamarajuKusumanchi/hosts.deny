@@ -176,8 +176,9 @@ ALL: 162.209.31.59
 ALL: 162.242.243.82
 ALL: 162.243.162.99
 ALL: 162.249.110.67
-ALL: 165.227.30.144
-ALL: 165.227.48.140
+# NetRange:       165.227.0.0 - 165.227.255.255
+# OrgAbuseEmail:  abuse@digitalocean.com
+ALL: 165.227.0.0/255.255.0.0
 # NetRange:       166.62.0.0 - 166.62.127.255
 # OrgAbuseEmail:  abuse@godaddy.com
 ALL: 166.62.0.0/255.255.128.0
