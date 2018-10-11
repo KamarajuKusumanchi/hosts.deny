@@ -81,6 +81,7 @@ ALL: 65.23.47.242
 ALL: 65.52.12.132
 ALL: 66.63.166.230
 ALL: 66.102.54.144
+ALL: 66.110.216.77
 # NetRange:       66.154.96.0 - 66.154.127.255
 # OrgAbuseEmail:  abuse@assertivenetworks.ca
 ALL: 66.154.96.0/255.255.224.0
