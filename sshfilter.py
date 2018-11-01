@@ -28,7 +28,8 @@ def get_country(ip):
     # regex = re.compile("GeoIP Country Edition: (\w+), ")
     # country = regex.findall(output)[0]
     pattern = "GeoIP Country Edition: (\w+), "
-    country = re.search(pattern, output).group(1) if re.match(pattern, output) else None
+    country = re.search(pattern, output).group(1) \
+        if re.match(pattern, output) else None
     # print('country of ', ip, ' = ', country)
     return country
 
