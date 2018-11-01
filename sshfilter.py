@@ -25,15 +25,20 @@ def get_country(ip):
     cmd += ' ' + ip
     # print('cmd = ', cmd)
     output = check_output(cmd)[0]
-    regex = re.compile("GeoIP Country Edition: (\w+), ")
-    country = regex.findall(output)[0]
+    # regex = re.compile("GeoIP Country Edition: (\w+), ")
+    # country = regex.findall(output)[0]
+    pattern = "GeoIP Country Edition: (\w+), "
+    country = re.search(pattern, output).group(1) if re.match(pattern, output) else None
     # print('country of ', ip, ' = ', country)
     return country
 
 
 def deny(ip):
     country = get_country(ip)
-    is_bad_country = country in Config['COUNTRIES']['DENY']
+    if country is None:
+        is_bad_country = False
+    else:
+        is_bad_country = country in Config['COUNTRIES']['DENY']
 
     if is_bad_country:
         return is_bad_country
