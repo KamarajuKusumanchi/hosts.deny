@@ -41,6 +41,7 @@ def deny(ip):
     else:
         is_bad_country = country in Config['COUNTRIES']['DENY']
 
+    # print('is_bad_country = ', is_bad_country)
     if is_bad_country:
         return is_bad_country
     else:
@@ -49,6 +50,7 @@ def deny(ip):
                                  header=None,
                                  names=['ip'])
         is_bad_ip = ip in black_list['ip'].values
+        # print('is_bad_ip = ', is_bad_ip)
         return is_bad_ip
 
 
