@@ -12,3 +12,11 @@ def test_get_country():
     assert expected == got, \
         'Unexpected country for ' + ip + '. Expected ' + expected + \
         ' but got ' + got + '.'
+
+
+def test_no_country():
+    ip = '193.169.252.228'
+    country = get_country(ip)
+    assert country is None, \
+        'Expected country to be None for ' + ip + '. But instead got ' + \
+        country + '.'
