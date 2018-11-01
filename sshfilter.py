@@ -36,10 +36,9 @@ def get_country(ip):
 
 def deny(ip):
     country = get_country(ip)
-    if country is None:
-        is_bad_country = False
-    else:
-        is_bad_country = country in Config['COUNTRIES']['DENY']
+    # print('country of ', ip, ' = ', country)
+    is_bad_country = country is not None and \
+        country in Config['COUNTRIES']['DENY']
 
     # print('is_bad_country = ', is_bad_country)
     if is_bad_country:
