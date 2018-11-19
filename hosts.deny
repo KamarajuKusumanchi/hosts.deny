@@ -260,8 +260,9 @@ ALL: 203.122.45.27
 # NetRange:       206.189.0.0 - 206.189.255.255
 # OrgAbuseEmail:  abuse@digitalocean.com
 ALL: 206.189.0.0/255.255.0.0
-ALL: 206.253.161.80
-ALL: 206.253.161.174
+# NetRange:       206.253.160.0 - 206.253.167.255
+# OrgAbuseEmail:  ircactus@gmail.com
+ALL: 206.253.160.0/255.255.248.0
 ALL: 207.224.25.115
 ALL: 208.67.16.157
 ALL: 208.83.222.179
