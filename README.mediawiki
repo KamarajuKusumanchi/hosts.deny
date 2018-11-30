@@ -27,13 +27,13 @@ For example
 <pre>
 ALL: 34.195.172.30
 </pre>
-will allow or block 34.195.172.30 depending on whether the line is added to hosts.allow or hosts.deny . Similarly
+will either allow or block 34.195.172.30 depending on whether the line is added to hosts.allow or hosts.deny . Similarly
 
 <pre>
 ALL: 120.192.0.0/255.192.0.0
 </pre>
 
-will allow or block everything between 120.192.0.0 and 120.255.255.255.
+will either allow or block everything between 120.192.0.0 and 120.255.255.255.
 
 ==== IP range and subnet mask ====
 
