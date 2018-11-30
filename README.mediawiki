@@ -1,11 +1,13 @@
 === Overview ===
-The goal here is to block ssh connections from unauthorized machines. This is achieved by using multiple layers of defense mechanisms such as
+The goal here is to
+* block ssh connections from unauthorized machines
+* allow connections from authroirzed machines (also known as white listing)
 
-* Explicitly listing IP addresses or a range of IP addresses
+Multiple defense mechanisms are used to achieve this:
+* Explicit listing of IP addresses or a range of IP addresses
 * Country based blocking
 * Blacklist based blocking
 
-The current approach is also flexible to allow connections from authorized machines (also known as white listing).
 
 === Explicit listing ===
 The first layer of defense is to explicitly list the IP address or a range of IP addresses in hosts.allow and hosts.deny files. An IP address in hosts.allow will always connect and an IP address in hosts.deny is always blocked. 
